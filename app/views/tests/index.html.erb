@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index | Simpler application</title>
+</head>
+<body>
+  <h1>Simpler framework in action</h1>
+  <ul>
+    <% @tests.each do |test| %>
+      <li><%= test.title %> (<%= test.level %>)</li>
+    <% end %>
+  </ul>
+</body>
+</html>
