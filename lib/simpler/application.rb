@@ -23,10 +23,12 @@ module Simpler
 
     def call(env)
       route = @router.route_for(env)
-      controller = route.controller.new(env)
-      action = route.action
-
-      make_response(controller, action)
+      
+      if route
+        forward(route, env)
+      else
+        not_found 
+      end
     end
 
     def routes(&block)
@@ -40,7 +42,6 @@ module Simpler
     end
 
     def require_routes
-      #require './config/routes'
       require Simpler.root.join('config/routes')
     end
 
@@ -54,5 +55,21 @@ module Simpler
     def make_response(controller, action)
       controller.make_response(action)
     end
+
+    def forward(route, env)
+      controller = route.controller.new(env)
+      controller.params.merge!(route.params)
+      action = route.action
+    
+      make_response(controller, action)
+    end
+
+    def not_found
+      [ 404,
+        { 'Content-Type' => 'text/plain' },
+        [ 'Not Found' ]
+      ]
+    end
+
   end
 end

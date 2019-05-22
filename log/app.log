@@ -1,0 +1,187 @@
+# Logfile created on 2019-05-21 12:14:12 +0300 by logger.rb/61378
+D, [2019-05-21T12:14:16.107162 #9586] DEBUG -- : Response:  OK [] 
+I, [2019-05-21T12:20:13.529707 #9711]  INFO -- : {"rack.version"=>[1, 3], "rack.errors"=>#<Rack::Lint::ErrorWrapper:0x00007f382401b888 @error=#<IO:<STDERR>>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "SCRIPT_NAME"=>"", "QUERY_STRING"=>"", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"puma 3.12.0 Llamas in Pajamas", "GATEWAY_INTERFACE"=>"CGI/1.2", "REQUEST_METHOD"=>"GET", "REQUEST_PATH"=>"/tests", "REQUEST_URI"=>"/tests", "HTTP_VERSION"=>"HTTP/1.1", "HTTP_HOST"=>"localhost:9292", "HTTP_USER_AGENT"=>"curl/7.64.0", "HTTP_ACCEPT"=>"*/*", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"9292", "PATH_INFO"=>"/tests", "REMOTE_ADDR"=>"::1", "puma.socket"=>#<TCPSocket:fd 15, AF_INET6, ::1, 9292>, "rack.hijack?"=>true, "rack.hijack"=>#<Proc:0x00007f382401bb30@/home/dade/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.7/lib/rack/lint.rb:525>, "rack.input"=>#<Rack::Lint::InputWrapper:0x00007f382401b8b0 @input=#<Puma::NullIO:0x0000561c24fc1e08>>, "rack.url_scheme"=>"http", "rack.after_reply"=>[], "puma.config"=>#<Puma::Configuration:0x0000561c24d6d2b0 @options=#<Puma::UserFileDefaultOptions:0x0000561c24d6c8d8 @user_options={:environment=>"development", :pid=>nil, :Port=>9292, :Host=>"localhost", :AccessLog=>[], :config=>"/home/dade/projects/ruby/simpler/config.ru", :log_requests=>false, :binds=>["tcp://localhost:9292"], :app=>#<Rack::ContentLength:0x0000561c24ef4688 @app=#<Rack::Chunked:0x0000561c24ef4728 @app=#<Rack::CommonLogger:0x0000561c24ef47c8 @app=#<Rack::ShowExceptions:0x0000561c24f2a4e0 @app=#<Rack::Lint:0x0000561c24f2a558 @app=#<Rack::TempfileReaper:0x0000561c24f2a5a8 @app=#<Simpler::AppLogger:0x0000561c250d28d8 @logger=#<Logger:0x0000561c250d1500 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x0000561c250d14b0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x0000561c250d1460 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename=#<Pathname:/home/dade/projects/ruby/simpler/log/app.log>, @dev=#<File:/home/dade/projects/ruby/simpler/log/app.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x0000561c250d13e8>>>, @app=#<Simpler::Application:0x0000561c24d10588 @router=#<Simpler::Router:0x0000561c24d104c0 @routes=[#<Simpler::Router::Route:0x0000561c250d3300 @method=:get, @path="/tests", @controller=TestsController, @action="index">, #<Simpler::Router::Route:0x0000561c250d30a8 @method=:post, @path="/tests", @controller=TestsController, @action="create">]>, @db=#<Sequel::SQLite::Database: {"adapter"=>"sqlite", "database"=>#<Pathname:/home/dade/projects/ruby/simpler/db/test_guru.sqlite>}>>>>, @content_length=nil>>, @logger=#<IO:<STDERR>>>>>}, @file_options={}, @default_options={:min_threads=>0, :max_threads=>16, :log_requests=>false, :debug=>false, :binds=>["tcp://0.0.0.0:9292"], :workers=>0, :daemon=>false, :mode=>:http, :worker_timeout=>60, :worker_boot_timeout=>60, :worker_shutdown_timeout=>30, :remote_address=>:socket, :tag=>"simpler", :environment=>"development", :rackup=>"config.ru", :logger=>#<IO:<STDOUT>>, :persistent_timeout=>20, :first_data_timeout=>30, :Verbose=>false, :Silent=>false}>, @plugins=#<Puma::PluginLoader:0x0000561c24d6c6f8 @instances=[]>, @user_dsl=#<Puma::DSL:0x0000561c24d6c680 @config=#<Puma::Configuration:0x0000561c24d6d2b0 ...>, @options={:environment=>"development", :pid=>nil, :Port=>9292, :Host=>"localhost", :AccessLog=>[], :config=>"/home/dade/projects/ruby/simpler/config.ru", :log_requests=>false, :binds=>["tcp://localhost:9292"], :app=>#<Rack::ContentLength:0x0000561c24ef4688 @app=#<Rack::Chunked:0x0000561c24ef4728 @app=#<Rack::CommonLogger:0x0000561c24ef47c8 @app=#<Rack::ShowExceptions:0x0000561c24f2a4e0 @app=#<Rack::Lint:0x0000561c24f2a558 @app=#<Rack::TempfileReaper:0x0000561c24f2a5a8 @app=#<Simpler::AppLogger:0x0000561c250d28d8 @logger=#<Logger:0x0000561c250d1500 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x0000561c250d14b0 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x0000561c250d1460 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename=#<Pathname:/home/dade/projects/ruby/simpler/log/app.log>, @dev=#<File:/home/dade/projects/ruby/simpler/log/app.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x0000561c250d13e8>>>, @app=#<Simpler::Application:0x0000561c24d10588 @router=#<Simpler::Router:0x0000561c24d104c0 @routes=[#<Simpler::Router::Route:0x0000561c250d3300 @method=:get, @path="/tests", @controller=TestsController, @action="index">, #<Simpler::Router::Route:0x0000561c250d30a8 @method=:post, @path="/tests", @controller=TestsController, @action="create">]>, @db=#<Sequel::SQLite::Database: {"adapter"=>"sqlite", "database"=>#<Pathname:/home/dade/projects/ruby/simpler/db/test_guru.sqlite>}>>>>, @content_length=nil>>, @logger=#<IO:<STDERR>>>>>}, @plugins=[]>, @file_dsl=#<Puma::DSL:0x0000561c24d6c608 @config=#<Puma::Configuration:0x0000561c24d6d2b0 ...>, @options={}, @plugins=[]>, @default_dsl=#<Puma::DSL:0x0000561c24d6c518 @config=#<Puma::Configuration:0x0000561c24d6d2b0 ...>, @options={:min_threads=>0, :max_threads=>16, :log_requests=>false, :debug=>false, :binds=>["tcp://0.0.0.0:9292"], :workers=>0, :daemon=>false, :mode=>:http, :worker_timeout=>60, :worker_boot_timeout=>60, :worker_shutdown_timeout=>30, :remote_address=>:socket, :tag=>"simpler", :environment=>"development", :rackup=>"config.ru", :logger=>#<IO:<STDOUT>>, :persistent_timeout=>20, :first_data_timeout=>30, :Verbose=>false, :Silent=>false}, @plugins=[]>>, "rack.tempfiles"=>[], "simpler.controller"=>#<TestsController:0x00007f3824030aa8 @name="tests", @request=#<Rack::Request:0x00007f38240308c8 @params=nil, @env={...}>, @response=#<Rack::Response:0x00007f38240308a0 @status=200, @header={"Content-Type"=>"text/plain", "Content-Length"=>"5"}, @writer=#<Proc:0x00007f3824030738@/home/dade/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.7/lib/rack/response.rb:32 (lambda)>, @block=nil, @length=5, @body=["Hello", ""]>, @tests=[#<Test @values={:id=>1, :title=>"Ruby beginner", :level=>0}>, #<Test @values={:id=>2, :title=>"Ruby advanced", :level=>1}>, #<Test @values={:id=>3, :title=>"Ruby expert", :level=>2}>, #<Test @values={:id=>4, :title=>"Javascript basics", :level=>1}>]>, "simpler.action"=>"index"}
+I, [2019-05-21T12:20:13.531534 #9711]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:20:13.531604 #9711]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:20:13.531645 #9711]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:20:13.531693 #9711]  INFO -- : Response: 200 OK [] 
+
+I, [2019-05-21T12:24:10.506412 #9776]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:24:10.506522 #9776]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:24:10.506565 #9776]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:24:10.506618 #9776]  INFO -- : Response: 200 OK [] 
+
+I, [2019-05-21T12:24:55.133600 #9804]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:24:55.133942 #9804]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:24:55.134052 #9804]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:24:55.134189 #9804]  INFO -- : Response: 200 OK [] 
+
+I, [2019-05-21T12:29:14.293027 #9887]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:29:14.293187 #9887]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:29:14.293248 #9887]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:31:33.333478 #9971]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:31:33.333569 #9971]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:31:33.333598 #9971]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:31:33.333633 #9971]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T12:34:34.882799 #10016]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:34:34.883660 #10016]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:34:34.885337 #10016]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:34:34.885645 #10016]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T12:35:15.575724 #10047]  INFO -- : {"rack.version"=>[1, 3], "rack.errors"=>#<Rack::Lint::ErrorWrapper:0x00007ffb8401bb48 @error=#<IO:<STDERR>>>, "rack.multithread"=>true, "rack.multiprocess"=>false, "rack.run_once"=>false, "SCRIPT_NAME"=>"", "QUERY_STRING"=>"", "SERVER_PROTOCOL"=>"HTTP/1.1", "SERVER_SOFTWARE"=>"puma 3.12.0 Llamas in Pajamas", "GATEWAY_INTERFACE"=>"CGI/1.2", "REQUEST_METHOD"=>"GET", "REQUEST_PATH"=>"/tests", "REQUEST_URI"=>"/tests", "HTTP_VERSION"=>"HTTP/1.1", "HTTP_HOST"=>"localhost:9292", "HTTP_USER_AGENT"=>"curl/7.64.0", "HTTP_ACCEPT"=>"*/*", "SERVER_NAME"=>"localhost", "SERVER_PORT"=>"9292", "PATH_INFO"=>"/tests", "REMOTE_ADDR"=>"::1", "puma.socket"=>#<TCPSocket:fd 15, AF_INET6, ::1, 9292>, "rack.hijack?"=>true, "rack.hijack"=>#<Proc:0x00007ffb8401bdf0@/home/dade/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.7/lib/rack/lint.rb:525>, "rack.input"=>#<Rack::Lint::InputWrapper:0x00007ffb8401bb70 @input=#<Puma::NullIO:0x0000555acda2a3c8>>, "rack.url_scheme"=>"http", "rack.after_reply"=>[], "puma.config"=>#<Puma::Configuration:0x0000555acd7d9718 @options=#<Puma::UserFileDefaultOptions:0x0000555acd7d9150 @user_options={:environment=>"development", :pid=>nil, :Port=>9292, :Host=>"localhost", :AccessLog=>[], :config=>"/home/dade/projects/ruby/simpler/config.ru", :log_requests=>false, :binds=>["tcp://localhost:9292"], :app=>#<Rack::ContentLength:0x0000555acd961450 @app=#<Rack::Chunked:0x0000555acd961518 @app=#<Rack::CommonLogger:0x0000555acd961568 @app=#<Rack::ShowExceptions:0x0000555acd996ba0 @app=#<Rack::Lint:0x0000555acd996c68 @app=#<Rack::TempfileReaper:0x0000555acd996d30 @app=#<Simpler::AppLogger:0x0000555acdb3aab0 @logger=#<Logger:0x0000555acdb396d8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x0000555acdb39660 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x0000555acdb39610 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename=#<Pathname:/home/dade/projects/ruby/simpler/log/app.log>, @dev=#<File:/home/dade/projects/ruby/simpler/log/app.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x0000555acdb39598>>>, @app=#<Simpler::Application:0x0000555acd7747c8 @router=#<Simpler::Router:0x0000555acd7747a0 @routes=[#<Simpler::Router::Route:0x0000555acdb3b4b0 @method=:get, @path="/tests", @controller=TestsController, @action="index">, #<Simpler::Router::Route:0x0000555acdb3b2a8 @method=:post, @path="/tests", @controller=TestsController, @action="create">]>, @db=#<Sequel::SQLite::Database: {"adapter"=>"sqlite", "database"=>#<Pathname:/home/dade/projects/ruby/simpler/db/test_guru.sqlite>}>>>>, @content_length=nil>>, @logger=#<IO:<STDERR>>>>>}, @file_options={}, @default_options={:min_threads=>0, :max_threads=>16, :log_requests=>false, :debug=>false, :binds=>["tcp://0.0.0.0:9292"], :workers=>0, :daemon=>false, :mode=>:http, :worker_timeout=>60, :worker_boot_timeout=>60, :worker_shutdown_timeout=>30, :remote_address=>:socket, :tag=>"simpler", :environment=>"development", :rackup=>"config.ru", :logger=>#<IO:<STDOUT>>, :persistent_timeout=>20, :first_data_timeout=>30, :Verbose=>false, :Silent=>false}>, @plugins=#<Puma::PluginLoader:0x0000555acd7d9010 @instances=[]>, @user_dsl=#<Puma::DSL:0x0000555acd7d8c00 @config=#<Puma::Configuration:0x0000555acd7d9718 ...>, @options={:environment=>"development", :pid=>nil, :Port=>9292, :Host=>"localhost", :AccessLog=>[], :config=>"/home/dade/projects/ruby/simpler/config.ru", :log_requests=>false, :binds=>["tcp://localhost:9292"], :app=>#<Rack::ContentLength:0x0000555acd961450 @app=#<Rack::Chunked:0x0000555acd961518 @app=#<Rack::CommonLogger:0x0000555acd961568 @app=#<Rack::ShowExceptions:0x0000555acd996ba0 @app=#<Rack::Lint:0x0000555acd996c68 @app=#<Rack::TempfileReaper:0x0000555acd996d30 @app=#<Simpler::AppLogger:0x0000555acdb3aab0 @logger=#<Logger:0x0000555acdb396d8 @level=0, @progname=nil, @default_formatter=#<Logger::Formatter:0x0000555acdb39660 @datetime_format=nil>, @formatter=nil, @logdev=#<Logger::LogDevice:0x0000555acdb39610 @shift_period_suffix="%Y%m%d", @shift_size=1048576, @shift_age=0, @filename=#<Pathname:/home/dade/projects/ruby/simpler/log/app.log>, @dev=#<File:/home/dade/projects/ruby/simpler/log/app.log>, @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mutex:0x0000555acdb39598>>>, @app=#<Simpler::Application:0x0000555acd7747c8 @router=#<Simpler::Router:0x0000555acd7747a0 @routes=[#<Simpler::Router::Route:0x0000555acdb3b4b0 @method=:get, @path="/tests", @controller=TestsController, @action="index">, #<Simpler::Router::Route:0x0000555acdb3b2a8 @method=:post, @path="/tests", @controller=TestsController, @action="create">]>, @db=#<Sequel::SQLite::Database: {"adapter"=>"sqlite", "database"=>#<Pathname:/home/dade/projects/ruby/simpler/db/test_guru.sqlite>}>>>>, @content_length=nil>>, @logger=#<IO:<STDERR>>>>>}, @plugins=[]>, @file_dsl=#<Puma::DSL:0x0000555acd7d88b8 @config=#<Puma::Configuration:0x0000555acd7d9718 ...>, @options={}, @plugins=[]>, @default_dsl=#<Puma::DSL:0x0000555acd7d85c0 @config=#<Puma::Configuration:0x0000555acd7d9718 ...>, @options={:min_threads=>0, :max_threads=>16, :log_requests=>false, :debug=>false, :binds=>["tcp://0.0.0.0:9292"], :workers=>0, :daemon=>false, :mode=>:http, :worker_timeout=>60, :worker_boot_timeout=>60, :worker_shutdown_timeout=>30, :remote_address=>:socket, :tag=>"simpler", :environment=>"development", :rackup=>"config.ru", :logger=>#<IO:<STDOUT>>, :persistent_timeout=>20, :first_data_timeout=>30, :Verbose=>false, :Silent=>false}, @plugins=[]>>, "rack.tempfiles"=>[], "simpler.controller"=>#<TestsController:0x00007ffb8401b8f0 @name="tests", @request=#<Rack::Request:0x00007ffb8401b710 @params=nil, @env={...}>, @response=#<Rack::Response:0x00007ffb84030bb0 @status=200, @header={"Content-Type"=>"text/html", "Content-Length"=>"354"}, @writer=#<Proc:0x00007ffb84030a48@/home/dade/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/rack-2.0.7/lib/rack/response.rb:32 (lambda)>, @block=nil, @length=354, @body=["<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Index | Simpler application</title>\n</head>\n<body>\n  <h1>Simpler framework in action</h1>\n  <ul>\n    \n      <li>Ruby beginner (0)</li>\n    \n      <li>Ruby advanced (1)</li>\n    \n      <li>Ruby expert (2)</li>\n    \n      <li>Javascript basics (1)</li>\n    \n  </ul>\n</body>\n</html>\n"]>, @tests=[#<Test @values={:id=>1, :title=>"Ruby beginner", :level=>0}>, #<Test @values={:id=>2, :title=>"Ruby advanced", :level=>1}>, #<Test @values={:id=>3, :title=>"Ruby expert", :level=>2}>, #<Test @values={:id=>4, :title=>"Javascript basics", :level=>1}>]>, "simpler.action"=>"index"}
+I, [2019-05-21T12:35:15.576780 #10047]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:35:15.576843 #10047]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:35:15.576885 #10047]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:35:15.576933 #10047]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T12:35:45.553451 #10071]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:35:45.553613 #10071]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:35:45.553721 #10071]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:35:45.553862 #10071]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T12:42:25.222636 #10180]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:42:25.223035 #10180]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:42:25.223173 #10180]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:42:25.223335 #10180]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T12:47:02.118519 #10276]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T12:47:02.118651 #10276]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T12:47:02.120321 #10276]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T12:47:02.120403 #10276]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T13:00:38.558590 #10476]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T13:00:38.558723 #10476]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:00:38.558768 #10476]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:00:38.558811 #10476]  INFO -- : Response: 200 OK [text/html] 
+
+I, [2019-05-21T13:01:32.150003 #10506]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T13:01:32.150130 #10506]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:01:32.150176 #10506]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:01:32.150224 #10506]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:05:03.373026 #10574]  INFO -- : Request:  /tests?category=Backend
+I, [2019-05-21T13:05:03.373255 #10574]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:05:03.375269 #10574]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:05:03.375342 #10574]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:05:26.727987 #10599]  INFO -- : Request:  /tests?category=Backend
+I, [2019-05-21T13:05:26.728089 #10599]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:05:26.728134 #10599]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:05:26.728188 #10599]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:14:11.955692 #10629]  INFO -- : Request:  /tests?category=Backend
+I, [2019-05-21T13:14:11.956500 #10629]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:14:11.956956 #10629]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:14:11.957135 #10629]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:20:40.079233 #10764]  INFO -- : Request: GET /tests
+I, [2019-05-21T13:20:40.079870 #10764]  INFO -- : Handler: tests#index
+I, [2019-05-21T13:20:40.080222 #10764]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:20:40.080438 #10764]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:22:04.974841 #10764]  INFO -- : Request: GET /tests
+I, [2019-05-21T13:22:04.975747 #10764]  INFO -- : Handler: tests#index
+I, [2019-05-21T13:22:04.976070 #10764]  INFO -- : Parameters: {'category' => 'Backend'}
+I, [2019-05-21T13:22:04.976331 #10764]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:22:11.790216 #10810]  INFO -- : Request: GET /tests
+I, [2019-05-21T13:22:11.790348 #10810]  INFO -- : Handler: tests#index
+I, [2019-05-21T13:22:11.790546 #10810]  INFO -- : Parameters: {"category"=>"Backend"}
+I, [2019-05-21T13:22:11.790613 #10810]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:25:45.648154 #10847]  INFO -- : Request: GET /tests
+I, [2019-05-21T13:25:45.648951 #10847]  INFO -- : Handler: tests#index
+I, [2019-05-21T13:25:45.650120 #10847]  INFO -- : Parameters: {"category"=>"Backend"}
+I, [2019-05-21T13:25:45.650640 #10847]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:38:04.001830 #10978]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T13:38:04.001945 #10978]  INFO -- : Handler: tests#index
+I, [2019-05-21T13:38:04.002147 #10978]  INFO -- : Parameters: {"category"=>"Backend"}
+I, [2019-05-21T13:38:04.002216 #10978]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:39:12.512349 #11007]  INFO -- : Request: GET /tests?category=Backend
+I, [2019-05-21T13:39:12.512449 #11007]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:39:12.512595 #11007]  INFO -- : Parameters: {"category"=>"Backend"}
+I, [2019-05-21T13:39:12.512645 #11007]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T13:51:41.069595 #11322]  INFO -- : Request: GET /tests/1
+I, [2019-05-21T13:51:41.069693 #11322]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T13:51:41.069759 #11322]  INFO -- : Parameters: {}
+I, [2019-05-21T13:51:41.069808 #11322]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T15:13:07.376434 #12073]  INFO -- : Request: GET /tests/1
+I, [2019-05-21T15:13:07.376625 #12073]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T15:13:07.379708 #12073]  INFO -- : Parameters: {}
+I, [2019-05-21T15:13:07.379847 #12073]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T15:16:54.926355 #12104]  INFO -- : Request: GET /tests/1
+I, [2019-05-21T15:16:54.926743 #12104]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T15:16:54.927175 #12104]  INFO -- : Parameters: {}
+I, [2019-05-21T15:16:54.927397 #12104]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T15:28:25.837053 #12237]  INFO -- : Request: GET /tests/1
+I, [2019-05-21T15:28:25.837153 #12237]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T15:28:25.837218 #12237]  INFO -- : Parameters: {}
+I, [2019-05-21T15:28:25.837265 #12237]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T15:33:06.780151 #12261]  INFO -- : Request: GET /tests/1
+I, [2019-05-21T15:33:06.781107 #12261]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T15:33:06.781430 #12261]  INFO -- : Parameters: {}
+I, [2019-05-21T15:33:06.781727 #12261]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-21T17:19:45.166462 #13041]  INFO -- : Request: GET /tests/1
+I, [2019-05-21T17:19:45.166749 #13041]  INFO -- : Handler: TestsController#index
+I, [2019-05-21T17:19:45.167073 #13041]  INFO -- : Parameters: {}
+I, [2019-05-21T17:19:45.167275 #13041]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T13:39:25.287699 #8824]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T13:39:25.288889 #8824]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T13:39:25.289141 #8824]  INFO -- : Parameters: {}
+I, [2019-05-22T13:39:25.289255 #8824]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T13:43:00.451204 #8858]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T13:43:00.451463 #8858]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T13:43:00.451662 #8858]  INFO -- : Parameters: {}
+I, [2019-05-22T13:43:00.451772 #8858]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T13:58:01.503961 #8940]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T13:58:01.504277 #8940]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T13:58:01.504532 #8940]  INFO -- : Parameters: {}
+I, [2019-05-22T13:58:01.504675 #8940]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T14:02:10.296172 #8940]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T14:02:10.296707 #8940]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T14:02:10.297120 #8940]  INFO -- : Parameters: {}
+I, [2019-05-22T14:02:10.297270 #8940]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T14:02:32.212672 #9008]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T14:02:32.212947 #9008]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T14:02:32.213154 #9008]  INFO -- : Parameters: {}
+I, [2019-05-22T14:02:32.213263 #9008]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T14:05:35.620439 #9030]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T14:05:35.620697 #9030]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T14:05:35.620941 #9030]  INFO -- : Parameters: {}
+I, [2019-05-22T14:05:35.621063 #9030]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T14:07:19.390226 #9070]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T14:07:19.390545 #9070]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T14:07:19.390810 #9070]  INFO -- : Parameters: {}
+I, [2019-05-22T14:07:19.390956 #9070]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T15:13:19.452928 #9823]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T15:13:19.454801 #9823]  INFO -- : Handler: TestsController#show
+I, [2019-05-22T15:13:19.455056 #9823]  INFO -- : Parameters: {}
+I, [2019-05-22T15:13:19.455187 #9823]  INFO -- : Response: 200 OK [text/html] tests/show.html.erb
+
+I, [2019-05-22T15:13:45.021639 #9823]  INFO -- : Request: GET /tests
+I, [2019-05-22T15:13:45.021967 #9823]  INFO -- : Handler: TestsController#index
+I, [2019-05-22T15:13:45.022115 #9823]  INFO -- : Parameters: {}
+I, [2019-05-22T15:13:45.022206 #9823]  INFO -- : Response: 200 OK [text/html] tests/index.html.erb
+
+I, [2019-05-22T15:36:04.487741 #10080]  INFO -- : Request: GET /tests/1
+I, [2019-05-22T15:36:04.487834 #10080]  INFO -- : Handler: TestsController#show
+I, [2019-05-22T15:36:04.487879 #10080]  INFO -- : Parameters: {}
+I, [2019-05-22T15:36:04.487910 #10080]  INFO -- : Response: 200 OK [text/html] tests/show.html.erb
+
